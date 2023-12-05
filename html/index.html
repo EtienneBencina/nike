@@ -1,12 +1,8 @@
 <html>
     <head>
         <title>Nike</title>
-        <script>
-            window.onload = function(){
-            var canvas = document.getElementById("canvas");
-            var context = canvas.getContext("2d");
-            } 
-        </script>
+        
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -224,10 +220,26 @@
                     305.75,544.22 306.62,543.41 306.62,543.41"
              />
         </svg>
-
+        <img src="../slike/nikepng.png" id="nikepng">
+        <canvas id="curve" width="1000" height="1000"></canvas>
         <script>
-            context.bezierCurveTo(M 198, 71 C 85, 317, 377, 177, 788, 71);
+            
+            var canvas = document.getElementById('curve');
+            var context = canvas.getContext('2d');
+            
+            context.beginPath();
+            context.moveTo(120.50,2.50);
+            context.bezierCurveTo(27.00,196.67, 164.33,192.67, 329.00,142.00);
+            context.bezierCurveTo(329.06,142.00, 839.33,6.67, 839.33,6.67);
+            context.bezierCurveTo(839.39,6.65, 222.00,270.00, 222.00,270.00);
+            context.bezierCurveTo(10.75,147.00, 29.25,97.50, 120.25,2.75);
+            context.lineWidth = 1;
+
+            // line color
+            context.strokeStyle = 'black';
+            context.stroke();
         </script>
+        
               
     </body>
 </html>
