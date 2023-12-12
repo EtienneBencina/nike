@@ -6,7 +6,7 @@
     </head>
     <body>
         <svg xmlns="http://www.w3.org/2000/svg"
-            width="5.33333in" height="5.33333in"
+            width="3.33333in" height="3.33333in"
             viewBox="0 0 1600 1600">
             <path id="Neimenovano"
                 fill="true" stroke="black" stroke-width="1"
@@ -221,23 +221,27 @@
              />
         </svg>
         <img src="../slike/nikepng.png" id="nikepng">
-        <canvas id="curve" width="1000" height="1000"></canvas>
+        <canvas id="curve" width="500" height="200"></canvas>
         <script>
             
             var canvas = document.getElementById('curve');
             var context = canvas.getContext('2d');
             
             context.beginPath();
-            context.moveTo(120.50,2.50);
-            context.bezierCurveTo(27.00,196.67, 164.33,192.67, 329.00,142.00);
-            context.bezierCurveTo(329.06,142.00, 839.33,6.67, 839.33,6.67);
-            context.bezierCurveTo(839.39,6.65, 222.00,270.00, 222.00,270.00);
-            context.bezierCurveTo(10.75,147.00, 29.25,97.50, 120.25,2.75);
+            context.moveTo(28.50, 122.00);
+            context.bezierCurveTo(7.065, 79.2975, 69.75, 18.25, 77.00, 10.50);
+            context.bezierCurveTo(40.00, 77.75, 86.8325, 91.00, 112.00, 84.50);
+            context.bezierCurveTo(112.50, 87.1675, 384.56, 11.8125, 383.25, 11.75);
+            context.bezierCurveTo(383.265, 11.775, 98.92, 139.8125, 96.875, 135.625);
+            context.bezierCurveTo(52.00, 149.25, 33.00, 131.25, 28.50, 122.00);
+
             context.lineWidth = 1;
 
-            // line color
-            context.strokeStyle = 'black';
+            context.fillStyle = "black";
+            context.fill();
+
             context.stroke();
+            context.strokeStyle = 'black';          
         </script>
         
               
