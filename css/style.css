@@ -42,13 +42,15 @@ html {
 }
 
 .najk{
+    
+    transform: rotate(2.5deg);
     position: absolute;
-  bottom: 142px;
-  right: 20px;
+    bottom: 291px;
+    right: 136px;
 }
 
 #savage{
-    position: absolute;
+  position: absolute;
   bottom: 167px;
   right: 72px;
 }
